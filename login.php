@@ -22,12 +22,12 @@
         <fieldset>
             <legend>Login</legend>        
             <div class="input-text">
-                <input type="text" name="NomeUsuario" id="txtNomeUsuario" placeholder="Nome de Usuário" require>
+                <input type="text" name="NomeUsuario" id="txtNomeUsuario" placeholder=" " require>
                 <label for="txtNomeUsuario">Nome de Usuário</label>
             </div>
             
             <div class="input-text">
-                <input type="password" name="Senha" id="txtSenha" placeholder="Senha" require>
+                <input type="password" name="Senha" id="txtSenha" placeholder=" " require>
                 <label for="txtSenha">Senha</label>
             </div>
             
