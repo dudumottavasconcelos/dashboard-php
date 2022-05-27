@@ -8,33 +8,33 @@
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
 <form action="config/login.php" method="POST">
         <fieldset>
             <legend>Login</legend>        
-            <p>
-                <label for="txtNomeUsuario">Nome de Usuário</label>
+            <div class="input-text">
                 <input type="text" name="NomeUsuario" id="txtNomeUsuario" placeholder="Nome de Usuário" require>
-            </p>
+                <label for="txtNomeUsuario">Nome de Usuário</label>
+            </div>
             
-            <p>
-                <label for="txtSenha">Senha</label>
+            <div class="input-text">
                 <input type="password" name="Senha" id="txtSenha" placeholder="Senha" require>
-            </p>
+                <label for="txtSenha">Senha</label>
+            </div>
             
-            <p>
+            <div class="buttons">
                 <input type="submit" value="Entrar">
                 <button><a href="index.php">Voltar</a></button>
-            </p>
+            </div>
         </fieldset>
     </form>
 </body>

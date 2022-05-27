@@ -16,39 +16,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-<form action="config/register.php" method="POST">
+    <form action="config/register.php" method="POST">
         <fieldset>
-            <p>
+            <legend>Cadastro</legend> 
+            <div class="input-text">
+                <input type="text" name="Nome" id="txtNome" placeholder=" " require>
                 <label for="txtNome">Nome</label>
-                <input type="text" name="Nome" id="txtNome" placeholder="Nome" require>
-            </p>
+            </div>
 
-            <p>
+            <div class="input-text">
+                <input type="text" name="Sobrenome" id="txtSobrenome" placeholder=" " require>
                 <label for="txtSobrenome">Sobrenome</label>
-                <input type="text" name="Sobrenome" id="txtSobrenome" placeholder="Sobrenome" require>
-            </p>
+            </div>
 
-            <p>
+            <div class="input-text">
+                <input type="text" name="NomeUsuario" id="txtNomeUsuario" placeholder=" " require>
                 <label for="txtNomeUsuario">Nome de Usuário</label>
-                <input type="text" name="NomeUsuario" id="txtNomeUsuario" placeholder="Nome de Usuário" require>
-            </p>
+            </div>
 
-            <p>
+            <div class="input-text">
+                <input type="email" name="Email" id="txtEmail" placeholder=" " require>
                 <label for="txtEmail">Email</label>
-                <input type="email" name="Email" id="txtEmail" placeholder="Email" require>
-            </p>
+            </div>
             
-            <p>
+            <div class="input-text">
+                <input type="password" name="Senha" id="txtSenha" placeholder=" " require>
                 <label for="txtSenha">Senha</label>
-                <input type="password" name="Senha" id="txtSenha" placeholder="Senha" require>
-            </p>
+            </div>
             
-            <p>
-                <input type="submit" value="Enviar">
+            <div class="buttons">
+                <input type="submit" value="Cadastar">
                 <button><a href="index.php">Voltar</a></button>
-            </p>
+            </div>
         </fieldset>
     </form>
 </body>
