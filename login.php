@@ -18,28 +18,37 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<form action="config/login.php" method="POST">
-        <fieldset>
-            <legend>Login</legend>        
-            <div class="input-text">
-                <input type="text" name="NomeUsuario" id="txtNomeUsuario" placeholder=" " required>
-                <label for="txtNomeUsuario">Nome de Usuário</label>
-            </div>
-            
-            <div class="input-text">
-                <input type="password" name="Senha" id="txtSenha" placeholder=" " required>
-                <label for="txtSenha">Senha</label>
-            </div>
-            
-            <div class="buttons">
-                <input type="submit" value="Entrar">
-                <a href="index.php" class="btn-voltar">Voltar</a>
-            </div>
-        </fieldset>
-    </form>
+    <div class="container">
+        <form action="config/login.php" method="POST">
+            <fieldset>
+                <legend>Login</legend>        
+                <div class="input-text">
+                    <input type="text" name="NomeUsuario" id="txtNomeUsuario" placeholder=" " required>
+                    <label for="txtNomeUsuario">Nome de Usuário</label>
+                </div>
+                
+                <div class="input-text">
+                    <input type="password" name="Senha" id="txtSenha" placeholder=" " required>
+                    <label for="txtSenha">Senha</label>
+                </div>
+
+                <?php
+                    if(isset($_SESSION['error'])){
+                        echo $_SESSION['error'];
+                        unset($_SESSION['error']);
+                    }
+                ?>                
+                
+                <div class="buttons">
+                    <input type="submit" value="Entrar">
+                    <a href="index.php" class="btn-voltar">Voltar</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 
     <footer> 
-        <p>Desenvolvido por Eduardo Vasconcelos &copy</p>
+        <p>Desenvolvido por XXX &copy</p>
     </footer>
 </body>
 </html>

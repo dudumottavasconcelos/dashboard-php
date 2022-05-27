@@ -19,43 +19,45 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <form action="config/register.php" method="POST">
-        <fieldset>
-            <legend>Cadastro</legend> 
-            <div class="input-text">
-                <input type="text" name="Nome" id="txtNome" placeholder=" " required>
-                <label for="txtNome">Nome</label>
-            </div>
+    <div class="container">
+        <form action="config/register.php" method="POST">
+            <fieldset>
+                <legend>Cadastro</legend> 
+                <div class="input-text">
+                    <input type="text" name="Nome" id="txtNome" placeholder=" " required>
+                    <label for="txtNome">Nome</label>
+                </div>
 
-            <div class="input-text">
-                <input type="text" name="Sobrenome" id="txtSobrenome" placeholder=" " required>
-                <label for="txtSobrenome">Sobrenome</label>
-            </div>
+                <div class="input-text">
+                    <input type="text" name="Sobrenome" id="txtSobrenome" placeholder=" " required>
+                    <label for="txtSobrenome">Sobrenome</label>
+                </div>
 
-            <div class="input-text">
-                <input type="text" name="NomeUsuario" id="txtNomeUsuario" placeholder=" " required>
-                <label for="txtNomeUsuario">Nome de Usuário</label>
-            </div>
+                <div class="input-text">
+                    <input type="text" name="NomeUsuario" id="txtNomeUsuario" placeholder=" " required>
+                    <label for="txtNomeUsuario">Nome de Usuário</label>
+                </div>
 
-            <div class="input-text">
-                <input type="email" name="Email" id="txtEmail" placeholder=" " required>
-                <label for="txtEmail">Email</label>
-            </div>
-            
-            <div class="input-text">
-                <input type="password" name="Senha" id="txtSenha" placeholder=" " required>
-                <label for="txtSenha">Senha</label>
-            </div>
-            
-            <div class="buttons">
-                <input type="submit" value="Cadastar">
-                <a href="index.php" class="btn-voltar">Voltar</a>
-            </div>
-        </fieldset>
-    </form>
+                <div class="input-text">
+                    <input type="email" name="Email" id="txtEmail" placeholder=" " required>
+                    <label for="txtEmail">Email</label>
+                </div>
+                
+                <div class="input-text">
+                    <input type="password" name="Senha" id="txtSenha" placeholder=" " required>
+                    <label for="txtSenha">Senha</label>
+                </div>
+                
+                <div class="buttons">
+                    <input type="submit" value="Cadastar">
+                    <a href="index.php" class="btn-voltar">Voltar</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 
     <footer> 
-        <p>Desenvolvido por Eduardo Vasconcelos &copy</p>
+        <p>Desenvolvido por XXX &copy</p>
     </footer>
 </body>
 </html>

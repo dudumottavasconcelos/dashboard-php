@@ -15,10 +15,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <title>Dashboard</title>
 </head>
 <body>
-    <p>Se vc está vendo isso, vc está logado.</p>
-    <button><a href="index.php">Voltar</a></button>
+    <div class="header">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.php" class="btn-inicio">Início</a></li>
+                <li><a href="dashboard.php" class="btn-cadastro">Dashboard</a></li>
+                <li><a href="config/disconnect.php" class="btn-desconectar">Desconectar</a></li>
+            </ul>
+        </nav> 
+    </div>
 </body>
 </html>

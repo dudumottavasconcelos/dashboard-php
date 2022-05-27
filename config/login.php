@@ -17,9 +17,11 @@
                 $_SESSION['usuario'] = $verificaSeExiste[0]["nomeUsuario"];
                 header("Location:../index.php");
                 exit();
-            } else {
-                echo "login ou senha inválido(s)";
+            } else {       
+                $_SESSION['error'] = '<span class="messageError">* Usuario ou senha inválido.</span>';       
                 unset($_POST);
+                header("Location:../login.php");
+                exit();
             }
         }
     } else {
